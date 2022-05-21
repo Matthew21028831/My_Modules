@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -16,6 +17,7 @@ public class ModuleDescription extends AppCompatActivity {
     TextView displaySem;
     TextView displayCredit;
     TextView displayVenue;
+    TextView backHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,7 @@ public class ModuleDescription extends AppCompatActivity {
         displaySem=findViewById(R.id.displaySem);
         displayCredit=findViewById(R.id.displayCredit);
         displayVenue=findViewById(R.id.displayVenue);
+        backHome=findViewById(R.id.backHome);
 
         Intent intentReceived=getIntent();
         String moduleSelected=intentReceived.getStringExtra("module");
@@ -107,5 +110,12 @@ public class ModuleDescription extends AppCompatActivity {
             displayVenue.setText("Module Venue: "+moduleVenue);
 
         }
+
+        backHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }

@@ -8,133 +8,235 @@
     tools:context=".ModuleDescription"
     android:background="@drawable/download">
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="156dp"
-        app:srcCompat="@drawable/untitled_1" />
+        android:layout_height="match_parent">
 
-    <View
-        android:layout_width="250dp"
-        android:layout_height="3dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@android:color/black" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/darkmagic"
-        android:gravity="center_horizontal"
-        android:text="Mischief Managed"
-        android:textColor="@color/black"
-        android:textSize="36sp" />
-
-    <View
-        android:layout_width="250dp"
-        android:layout_height="3dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@android:color/black" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/darkmagic"
-        android:gravity="center_horizontal"
-        android:text="This is your module description"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/displayCode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/realitymagic"
-        android:padding="16dp"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/displayName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/realitymagic"
-        android:padding="16dp"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/displayYear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/realitymagic"
-        android:padding="16dp"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/displaySem"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/realitymagic"
-        android:padding="16dp"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/displayCredit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/realitymagic"
-        android:padding="16dp"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/displayVenue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/realitymagic"
-        android:padding="16dp"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="18sp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:fontFamily="@font/darkmagic"
-        android:gravity="center_horizontal"
-        android:padding="16dp"
-        android:text='"It does not do to dwell on dreams and forget to live."'
-        android:textSize="16sp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <TextView
-            android:id="@+id/textView5"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fontFamily="@font/darkmagic"
-            android:gravity="center_horizontal"
-            android:text="-Albus Dumbledore" />
+            android:orientation="vertical" >
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="156dp"
+                    app:srcCompat="@drawable/untitled_1" />
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/darkmagic"
+                    android:gravity="center_horizontal"
+                    android:text="Mischief Managed"
+                    android:textColor="@color/black"
+                    android:textSize="36sp" />
+
+                <View
+                    android:layout_width="250dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/darkmagic"
+                    android:gravity="center_horizontal"
+                    android:text="This is your module description"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:id="@+id/displayCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/realitymagic"
+                    android:paddingLeft="50dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/displayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/realitymagic"
+                    android:paddingLeft="50dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/displayYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/realitymagic"
+                    android:paddingLeft="50dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/displaySem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/realitymagic"
+                    android:paddingLeft="50dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/displayCredit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/realitymagic"
+                    android:paddingLeft="50dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <TextView
+                    android:id="@+id/displayVenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/realitymagic"
+                    android:paddingLeft="50dp"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp" />
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey" />
 
 
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/darkmagic"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text='"It does not do to dwell on dreams and forget to live."'
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/darkmagic"
+                        android:gravity="center_horizontal"
+                        android:text="-Albus Dumbledore" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:padding="16dp" />
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp" />
+
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:id="@+id/backHome"
+                    android:layout_width="153dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/enchantedland"
+                    android:gravity="center_horizontal"
+                    android:text="Back To Home"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:padding="16dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
